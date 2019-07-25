@@ -62,7 +62,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: rgba(darken($primary-color, 5), 0.8);
+    background: rgba(darken($primary-color, 5), 0.95);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
