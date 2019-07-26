@@ -56,8 +56,10 @@ main {
 
   .icons {
     margin-top: 1rem;
+
     a {
       padding: 0.4rem;
+      color: set-text-color($primary-color);
 
       &:hover {
         color: $secondary-color;
@@ -86,6 +88,7 @@ main {
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
+
     height: 250px;
     width: 250px;
   }
@@ -106,7 +109,12 @@ main {
   .job {
     background: lighten($primary-color, 5);
     padding: 1rem;
+    //border: $secondary-color 5px solid;
     border-bottom: $secondary-color 5px solid;
+  }
+
+  h5 {
+    margin-top: 0px;
   }
 }
 
@@ -124,7 +132,7 @@ main {
   img {
     width: 100%;
     height: 75%;
-    border: 3px #fff solid;
+    border: 3px set-text-color($primary-color) solid;
 
     &:hover {
       opacity: 0.5;
@@ -144,7 +152,7 @@ main {
 
   div {
     font-size: 1rem;
-    border: 3px #fff solid;
+    border: 3px set-text-color($primary-color) solid;
     padding: 1rem 2rem;
     margin-bottom: 3rem;
     @include easeOut;
@@ -152,9 +160,9 @@ main {
     &:hover {
       padding: 0.5rem 1.5rem;
       background: $secondary-color;
-      color: set-text-color($secondary-color);
+      color: $primary-color;
       span {
-        color: set-text-color($secondary-color);
+        color: $primary-color;
       }
     }
   }
@@ -164,7 +172,7 @@ main {
 .btn {
   display: block;
   padding: 0.5rem 1rem;
-  border: 0;
+  border: 0px;
   margin-bottom: 0.3rem;
   &:hover {
     background: $secondary-color;
@@ -180,7 +188,7 @@ main {
 
 .btn-light {
   @extend .btn;
-  background: lighten($primary-color, 50);
+  background: lighten($primary-color, 70);
   color: #333;
 }
 
