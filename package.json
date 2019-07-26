@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio Website",
   "main": "index.js",
+  "homepage": "https://anandisg.github.io/portfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive --use-polling --polling-interval 1000"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive --use-polling --polling-interval 1000",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Anandi Sekar",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0"
   }
 }
