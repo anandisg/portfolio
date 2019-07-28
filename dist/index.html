@@ -19,6 +19,7 @@
     />
   </head>
   <body id="bg-img">
+    <div id="particles-js"></div>
     <header>
       <div class="menu-btn">
         <div class="btn-line"></div>
@@ -32,16 +33,18 @@
         </div>
         <ul class="menu-nav">
           <li class="nav-item current">
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link  effect-underline">Home</a>
           </li>
           <li class="nav-item">
-            <a href="about.html" class="nav-link">About Me</a>
+            <a href="about.html" class="nav-link  effect-underline">About Me</a>
           </li>
           <li class="nav-item">
-            <a href="work.html" class="nav-link">My Work</a>
+            <a href="work.html" class="nav-link  effect-underline">My Work</a>
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link">How To Reach Me</a>
+            <a href="contact.html" class="nav-link  effect-underline"
+              >How To Reach Me</a
+            >
           </li>
         </ul>
       </nav>
@@ -49,7 +52,7 @@
 
     <main id="home">
       <h1 class="lg-heading">
-        ANANDI <span class="text-secondary">SEKAR</span>
+        ANANDI SEKAR
       </h1>
       <h2 class="sm-heading">
         Web Developer, Programmer, Designer & Sports Enthusiast
@@ -58,12 +61,23 @@
         <a href="https://www.linkedin.com/in/anandisekar/" target="_blank">
           <i class="fab fa-linkedin fa-2x"></i>
         </a>
-        <a href="https://www.github.com/A1C3E" target="_blank">
+        <a href="https://www.github.com/anandisg" target="_blank">
           <i class="fab fa-github fa-2x"></i>
         </a>
       </div>
     </main>
 
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS.load("particles-js", "/particles.json", function() {
+        console.log("json file loaded...");
+      });
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>

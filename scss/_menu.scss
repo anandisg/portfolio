@@ -1,7 +1,7 @@
 //Menu button
 .menu-btn {
   position: absolute;
-  z-index: 3;
+  z-index: 10;
   right: 35px;
   top: 35px;
   cursor: pointer;
@@ -36,7 +36,6 @@
 }
 
 // Menu Overlay
-
 .menu {
   position: fixed;
   top: 0;
@@ -107,29 +106,53 @@
     }
 
     &.current > a {
+      color: white;
+    }
+
+    /*effect-underline*/
+    a.effect-underline:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      display: inline-block;
+      height: 1em;
+      width: 100%;
+      border-bottom: 1px solid;
+      margin-top: 10px;
+      opacity: 0;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: scale(0, 1);
+      transform: scale(0, 1);
+    }
+
+    a.effect-underline:hover:after {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+
+    .nav-link {
+      display: inline-block;
+      position: relative;
+      font-size: 30px;
+      text-transform: uppercase;
+      padding: 1rem 0;
+      font-weight: 300;
       color: $secondary-color;
+      text-decoration: none;
+      @include easeOut;
+
+      // &:hover {
+      //   text-decoration: underline;
+      // }
     }
   }
-  .nav-link {
-    display: inline-block;
-    position: relative;
-    font-size: 30px;
-    text-transform: uppercase;
-    padding: 1rem 0;
-    font-weight: 300;
-    color: set-text-color($primary-color);
-    text-decoration: none;
-    @include easeOut;
 
-    &:hover {
-      color: $secondary-color;
+  //Delay each nav item slide by 0.1s
+  @for $x from 1 through 4 {
+    .nav-item:nth-child(#{$x}) {
+      transition-delay: $x * 0.1s;
     }
-  }
-}
-
-//Delay each nav item slide by 0.1s
-@for $x from 1 through 4 {
-  .nav-item:nth-child(#{$x}) {
-    transition-delay: $x * 0.1s;
   }
 }
