@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>View My Work</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+      integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      id="particles-js"
+      style="height: 25%; position: fixed"
+      data-stellar-ratio="1"
+    ></div>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link effect-underline">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link effect-underline">About Me</a>
+          </li>
+          <li class="nav-item current">
+            <a href="work.html" class="nav-link effect-underline">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link effect-underline"
+              >How To Reach Me</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="work">
+      <h1 class="lg-heading">MY<span class="text-secondary"> WORK</span></h1>
+      <h2 class="sm-heading">
+        Check out some of my projects...
+      </h2>
+
+      <div class="projects">
+        <div class="item">
+          <a href="https://anandisg.github.io/html5-canvas/">
+            <img src="img/projects/project1.jpg" alt="Project" />
+          </a>
+          <a href="https://anandisg.github.io/html5-canvas/" class="btn-light">
+            <i class="fas fa-eye"></i> HTML5 Canvas Animation
+          </a>
+          <a href="https://github.com/anandisg/html5-canvas" class="btn-dark">
+            <i class="fab fa-github"></i> Github
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="https://anandisg.github.io/landing-page">
+            <img src="img/projects/project2.png" alt="Project" />
+          </a>
+          <a href="https://anandisg.github.io/landing-page" class="btn-light">
+            <i class="fas fa-eye"></i> SASS-Y Website
+          </a>
+          <a href="https://github.com/anandisg/landing-page" class="btn-dark">
+            <i class="fab fa-github"></i> Github
+          </a>
+        </div>
+
+        <div class="item">
+          <a
+            href="https://anandisg.github.io/mobile-first-photography-website/"
+          >
+            <img src="img/projects/project3.png" alt="Project" />
+          </a>
+          <a
+            href="https://anandisg.github.io/mobile-first-photography-website/"
+            class="btn-light"
+          >
+            <i class="fas fa-eye"></i> Sample Photography Portfolio Website
+          </a>
+          <a
+            href="https://github.com/anandisg/mobile-first-photography-website"
+            class="btn-dark"
+          >
+            <i class="fab fa-github"></i> Github
+          </a>
+        </div>
+
+        <!-- <div class="item">
+          <a href="#!">
+            <img src="img/projects/project4.jpg" alt="Project" />
+          </a>
+          <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
+          <a href="#" class="btn-dark">
+            <i class="fab fa-github"></i> Github
+          </a>
+        </div>
+        <div class="item">
+          <a href="#!">
+            <img src="img/projects/project5.png" alt="Project" />
+          </a>
+          <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
+          <a href="#" class="btn-dark">
+            <i class="fab fa-github"></i> Github
+          </a>
+        </div> -->
+      </div>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS.load("particles-js", "particles copy.json", function() {
+        console.log("json file loaded...");
+      });
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-2.0.2.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script>
+      $.stellar();
+    </script>
+  </body>
+</html>
