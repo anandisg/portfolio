@@ -242,7 +242,8 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-top: 50px; }
   .projects .item {
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    height: 80%; }
   .projects img {
     width: 100%;
     height: 75%;
